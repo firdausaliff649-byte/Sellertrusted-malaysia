@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seller Trusted Malaysia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:
+linear-gradient(135deg,#12001f,#3f0071,#6a00ff);
+min-height:100vh;
+padding:40px 20px;
+overflow-x:hidden;
+position:relative;
+}
+
+/* animated background */
+
+.glow1,
+.glow2{
+position:fixed;
+border-radius:50%;
+filter:blur(120px);
+opacity:0.6;
+z-index:0;
+animation:float 7s infinite alternate;
+}
+
+.glow1{
+width:320px;
+height:320px;
+background:#ff00ff;
+top:-100px;
+left:-100px;
+}
+
+.glow2{
+width:280px;
+height:280px;
+background:#00cfff;
+bottom:-80px;
+right:-80px;
+animation-delay:2s;
+}
+
+@keyframes float{
+from{
+transform:translateY(0px);
+}
+to{
+transform:translateY(40px);
+}
+}
+
+/* title */
+
+.title{
+position:relative;
+z-index:2;
+text-align:center;
+margin-bottom:35px;
+}
+
+.title h1{
+font-size:42px;
+font-weight:800;
+color:white;
+text-shadow:0 0 20px #bb00ff;
+}
+
+.title p{
+margin-top:10px;
+font-size:15px;
+color:#dcdcdc;
+}
+
+/* container */
+
+.container{
+position:relative;
+z-index:2;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+
+max-width:1200px;
+margin:auto;
+}
+
+/* seller card */
+
+.card{
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,0.15);
+
+border-radius:28px;
+
+padding:30px;
+
+text-align:center;
+
+box-shadow:
+0 0 25px rgba(187,0,255,0.25);
+
+transition:0.35s;
+animation:show 1s ease;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:
+0 0 40px rgba(0,207,255,0.45);
+}
+
+@keyframes show{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* logo */
+
+.logo{
+width:90px;
+height:90px;
+
+margin:auto;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:38px;
+font-weight:800;
+color:white;
+
+background:
+linear-gradient(135deg,#ff00ff,#00cfff);
+
+box-shadow:
+0 0 20px #ff00ff,
+0 0 40px #00cfff;
+
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.08);
+}
+100%{
+transform:scale(1);
+}
+}
+
+/* text */
+
+.name{
+margin-top:22px;
+font-size:32px;
+font-weight:800;
+line-height:1.1;
+color:white;
+}
+
+.role{
+margin-top:10px;
+font-size:15px;
+color:#d9d9d9;
+line-height:1.7;
+}
+
+/* buttons */
+
+.btn{
+display:block;
+width:100%;
+
+padding:15px;
+margin-top:18px;
+
+border-radius:16px;
+
+text-decoration:none;
+font-size:16px;
+font-weight:700;
+color:white;
+
+transition:0.3s;
+position:relative;
+overflow:hidden;
+}
+
+.btn::before{
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.15);
+transition:0.5s;
+}
+
+.btn:hover::before{
+left:100%;
+}
+
+.owner{
+background:
+linear-gradient(135deg,#00cfff,#0088ff);
+
+box-shadow:
+0 0 20px rgba(0,207,255,0.45);
+}
+
+.reseller{
+background:
+linear-gradient(135deg,#ff00ff,#7b00ff);
+
+box-shadow:
+0 0 20px rgba(255,0,255,0.45);
+}
+
+/* numbers */
+
+.info{
+margin-top:24px;
+font-size:15px;
+line-height:2;
+color:white;
+font-weight:500;
+}
+
+/* footer */
+
+.footer{
+position:relative;
+z-index:2;
+margin-top:45px;
+text-align:center;
+font-size:14px;
+color:#d0d0d0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="glow1"></div>
+<div class="glow2"></div>
+
+<div class="title">
+<h1>Seller Trusted Malaysia</h1>
+<p>Premium Trusted Seller & Midman List</p>
+</div>
+
+<div class="container">
+
+<!-- SELLER 1 -->
+
+<div class="card">
+
+<div class="logo">K</div>
+
+<div class="name">Kizx Store</div>
+
+<div class="role">
+Premium Trusted Seller Malaysia
+</div>
+
+<a href="https://wa.me/601161019275" class="btn owner">
+Chat Owner
+</a>
+
+<a href="https://wa.me/60137863853" class="btn reseller">
+Official Reseller
+</a>
+
+<div class="info">
+📞 Owner : 601161019275<br>
+📞 Damm : 60137863853
+</div>
+
+</div>
+
+<!-- TAMBAH SELLER BARU BAWAH NI -->
+
+<div class="card">
+
+<div class="logo">S</div>
+
+<div class="name">Seller Name</div>
+
+<div class="role">
+Trusted Seller Malaysia
+</div>
+
+<a href="https://wa.me/60123456789" class="btn owner">
+Chat Seller
+</a>
+
+<a href="https://wa.me/60123456789" class="btn reseller">
+Official Contact
+</a>
+
+<div class="info">
+📞 Number : 60123456789
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Seller Trusted Malaysia
+</div>
+
+</body>
+  </html>
